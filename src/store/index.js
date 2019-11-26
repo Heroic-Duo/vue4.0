@@ -1,11 +1,30 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+import user from './modules/user'
+// import searh from './modules/searh'
+// import Menu from './modules/Menu'
 
-export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
-});
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: {
+    imgUrl: '//img.pipacoding.com/assets/pc/assistantTeacher/'
+  },
+  mutations: {
+    //
+  },
+  actions: {
+
+  },
+  getters: {
+    imgUrl (state) {
+      return state.imgUrl
+    }
+  },
+  modules: {
+    user
+  }
+})
+
+export default store

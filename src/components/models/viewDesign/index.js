@@ -22,6 +22,13 @@ import {
     Layout,
     Cascader,
     LoadingBar,
+    Form,
+    FormItem,
+    Message,
+    DatePicker,
+    TimePicker,
+    CheckboxGroup,
+    Checkbox,
     Upload
 } from 'view-design'
 
@@ -49,10 +56,17 @@ const viewDesign= {
         Vue.component('Card', Card)
         Vue.component('Layout', Layout)
         Vue.component('Cascader', Cascader)
-        // Vue.component('LoadingBar', LoadingBar)
+        Vue.component('Form', Form)
+        Vue.component('FormItem', FormItem)
+         Vue.component('DatePicker', DatePicker)
         Vue.component('Upload', Upload)
+        Vue.component('TimePicker', TimePicker)
+        Vue.component('Checkbox', Checkbox)
+        Vue.component('CheckboxGroup', CheckboxGroup)
+
 
         Vue.prototype.$LoadingBar = LoadingBar
+        Vue.prototype.$Message = Message
     }
 
 }

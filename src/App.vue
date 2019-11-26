@@ -6,7 +6,10 @@
     <router-view />
     <Foter id="footer"></Foter>
     
-    <BackTop class="backTop"></BackTop>
+    <!-- <BackTop class="backTop"></BackTop> -->
+    <BackTop :height="100" :bottom="100">
+        <div class="top">返回顶端</div>
+    </BackTop>
   </div>
 </template>
 <script>
@@ -32,5 +35,8 @@ export default {
   margin: 105px 0 0 0;
 
  
+}
+#footer{
+  margin: 90px 0 0 0;
 }
 </style>

@@ -309,8 +309,8 @@ body{
 }
 /* 公共样式  一级目录*/
 .alike_class{
-    width: 86%;
-    margin: 10px auto;
+    width: 98%;
+    margin: 0px auto;
     background: rgba(16, 105, 52, 0.5803921568627451);
     border-radius: 15px;
 }
